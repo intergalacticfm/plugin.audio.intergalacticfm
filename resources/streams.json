@@ -1,0 +1,23 @@
+{
+    "cbs": {
+        "label": "Cybernetic Broadcasting System",
+        "url": "live/cbstv/",
+        "tagline": "Nothing Beyond Our Reach",
+        "plot": "Cybernetic Broadcasting System dominates our galaxy for over a decade. This is the main audio stream from Intergalactic FM. You can run all you want, but there is no escaping CBS.",
+        "genre": "electro, acid, italo, disco"
+    },
+    "df": {
+        "label": "IFM Disco Fetish",
+        "url": "live/smil:tv.smil/",
+        "tagline": "No Station Such Dedication",
+        "plot": "This stream is Intergalactic FM's audio channel called Disco Fetish. Here you will find the galaxy's best of Disco, Italo and Electro",
+        "genre": "disco, italo, electro"
+    },
+    "dm": {
+        "label": "IFM Dream Machine",
+        "url": "live/smil:tv.smil/",
+        "tagline": "TODO",
+        "plot": "TODO",
+        "genre": "soundscapes, soundtracks, B movies"
+    }
+}
