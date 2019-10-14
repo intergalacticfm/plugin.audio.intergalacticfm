@@ -30,15 +30,15 @@
     "dm_aac": {
         "label": "IFM Dream Machine - 128k AAC+",
         "file": "3aac",
-        "tagline": "No Station Such Dedication",
-        "plot": "This stream is Intergalactic FM's audio channel called Dream Machine. Here you will find soundscapes, sound tracks and B movies.",
-        "genre": "soundscapes, soundtracks, B movies"
+        "tagline": "You Are Not Alone",
+        "plot": "This stream is Intergalactic FM's audio channel called Dream Machine for soundtracks, ambient and experimental music.",
+        "genre": "soundtracks and exotica"
     },
     "dm_mp3": {
         "label": "IFM Dream Machine - 192k MP3",
         "file": "3",
-        "tagline": "No Station Such Dedication",
-        "plot": "This stream is Intergalactic FM's audio channel called Dream Machine. Here you will find soundscapes, sound tracks and B movies.",
-        "genre": "soundscapes, soundtracks, B movies"
+        "tagline": "You Are Not Alone",
+        "plot": "This stream is Intergalactic FM's audio channel called Dream Machine for soundtracks, ambient and experimental music.",
+        "genre": "soundtracks and exotica"
     }
 }
