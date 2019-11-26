@@ -16,7 +16,7 @@ from urlparse import parse_qsl
 import xbmcgui
 import xbmcplugin
 import xbmcaddon
-from xbmc import log, LOGNOTICE, LOGERROR
+from xbmc import log, LOGDEBUG
 
 __addonid__ = "plugin.audio.intergalacticfm"
 base = xbmc.translatePath('special://home/addons/{}/resources/'.format(__addonid__))
@@ -28,16 +28,13 @@ _handle = int(argv[1])
 
 _addon = xbmcaddon.Addon()
 
-
-radio = 'http://radio.intergalactic.fm:80/'
-
-streams = load(open(base + 'streams.json'))
-
 def list_audios():
     """
     Create the list of playable streams in the Kodi interface.
     """
 
+    radio = 'http://radio.intergalactic.fm:80/'
+    streams = load(open(base + 'streams.json'))
     listing = []
 
     xbmcplugin.setPluginCategory(_handle, 'Live Streams')
@@ -52,14 +49,14 @@ def list_audios():
 
         art = {}
 
-        #log(__addonid__ + ' key: ' + key, LOGNOTICE)
+        #log(__addonid__ + ' key: ' + key, LOGDEBUG)
         # poster 1000x1500 1:1.5 PNG
         poster = '{}{}-poster.png'.format(base, key)
         if isfile(poster):
             art['poster'] = poster
         else: # note: specific fallback
             art['poster'] = '{}intergalactic_radio-poster.png'.format(base)
-        #log(__addonid__ + ' poster: ' + art['poster'], LOGNOTICE)
+        #log(__addonid__ + ' poster: ' + art['poster'], LOGDEBUG)
 
         # fanart 1920x1080 16:9 JPG
         fanart = '{}{}-fanart.jpg'.format(base, key.split('_')[0])
@@ -67,7 +64,7 @@ def list_audios():
             art['fanart'] = fanart
         else: # note: specific fallback
             art['fanart'] = '{}fanart.jpg'.format(base)
-        #log(__addonid__ + ' fanart: ' + art['fanart'], LOGNOTICE)
+        #log(__addonid__ + ' fanart: ' + art['fanart'], LOGDEBUG)
 
         # clearlogo 800x310 1:0.388 transparent PNG (is top-left corner overlay)
         art['clearlogo'] = '{}intergalactic_radio-clearlogo.png'.format(base)
@@ -76,9 +73,9 @@ def list_audios():
         list_item.setProperty('IsPlayable', 'true')
 
         url = '{}{}'.format(radio, audio['file'])
-        log(__addonid__ + ' url: ' + url, LOGNOTICE)
+        log(__addonid__ + ' url: ' + url, LOGDEBUG)
         url = '{}?action=play&video={}'.format(_url, url)
-        log(__addonid__ + ' url: ' + url, LOGNOTICE)
+        log(__addonid__ + ' url: ' + url, LOGDEBUG)
         is_folder = False
 
         listing.append((url, list_item, is_folder))
