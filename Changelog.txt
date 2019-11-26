@@ -3,17 +3,14 @@ Version 2.0.1 - 2019-11-24
 - Minor improvements after review Kodi maintainers
 
 
-
 Version 2.0.0 - 2019-10-14
 
 - Completely new implementation by Dreamer and Pander based on video add-on
 
 
-
 Version 1.0.7 - 2016-12-22
 
 - Upgraded channels url to http, no https
-
 
 
 Version 1.0.6 - 2016-10-10
@@ -26,7 +23,6 @@ Version 1.0.6 - 2016-10-10
 - Improved texts
 
 
-
 Version 1.0.5 - 2016-02-25
 
 - Fixed icon
@@ -36,11 +32,9 @@ Version 1.0.5 - 2016-02-25
 - Added URL to forum
 
 
-
 Version 1.0.4 - 2016-01-17
 
 - Improved documentation and link to video plugin
-
 
 
 Version 1.0.3 - 2015-11-28
