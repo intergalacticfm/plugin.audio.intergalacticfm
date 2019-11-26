@@ -1,22 +1,22 @@
-[B]Version 2.0.1 - 2019-11-24[/B]
+Version 2.0.1 - 2019-11-24
 
 - Minor improvements after review Kodi maintainers
 
 
 
-[B]Version 2.0.0 - 2019-10-14[/B]
+Version 2.0.0 - 2019-10-14
 
 - Completely new implementation by Dreamer and Pander based on video add-on
 
 
 
-[B]Version 1.0.7 - 2016-12-22[/B]
+Version 1.0.7 - 2016-12-22
 
 - Upgraded channels url to http, no https
 
 
 
-[B]Version 1.0.6 - 2016-10-10[/B]
+Version 1.0.6 - 2016-10-10
 
 - Upgraded icon
 - Upgraded image urls
@@ -27,7 +27,7 @@
 
 
 
-[B]Version 1.0.5 - 2016-02-25[/B]
+Version 1.0.5 - 2016-02-25
 
 - Fixed icon
 - Fixed typo in documentation
@@ -37,13 +37,13 @@
 
 
 
-[B]Version 1.0.4 - 2016-01-17[/B]
+Version 1.0.4 - 2016-01-17
 
 - Improved documentation and link to video plugin
 
 
 
-[B]Version 1.0.3 - 2015-11-28[/B]
+Version 1.0.3 - 2015-11-28
 
 - Improved fanart and added it to all channels
 - Log to debug level
@@ -51,42 +51,37 @@
 
 
 
-[B]Version 1.0.2 - 2015-11-25[/B]
+Version 1.0.2 - 2015-11-25
 
 - Approved fork from from SomaFM for Intergalactic FM
 - Artwork from Intergalactic FM
 - Fanart from Yulia Vilensky
 
 
-
-[B]Version 1.0.1 - 2015-01-01[/B]
+Version 1.0.1 - 2015-01-01
 
 - Fix playback on Android client
 
 
-
-[B]Version 1.0.0 - 2014-10-09[/B]
+Version 1.0.0 - 2014-10-09
 
 - Use localized strings, supporting English and German for now
 - Settings for caching the channel list and clearing the cache
 - Include a donation reminder <3
 
 
-
-[B]Version 0.1.0 - 2014-10-05[/B]
+Version 0.1.0 - 2014-10-05
 
 - Automatically select a stream and instantly start playback when station is selected
 - Cache playlist files
 - Settings for quality, format and firewall streams
 
 
-
-[B]Version 0.0.2 - 2013-07-21[/B]
+Version 0.0.2 - 2013-07-21
 
 - Use SomaFM XML API.
 
 
-
-[B]Version 0.0.1 - 2011-03-07[/B]
+Version 0.0.1 - 2011-03-07
 
 - Initial version.
