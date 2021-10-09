@@ -9,8 +9,8 @@ from sys import argv
 from os.path import isfile
 import requests
 
-from urllib import urlencode
-from urlparse import parse_qsl
+from urllib.parse import urlencode
+from urllib.parse import parse_qsl
 
 
 import xbmcgui
@@ -40,7 +40,7 @@ def list_audios():
     xbmcplugin.setPluginCategory(_handle, 'Live Streams')
     xbmcplugin.setContent(_handle, 'videos')
 
-    for key, audio in streams.items():
+    for key, audio in list(streams.items()):
         list_item = xbmcgui.ListItem(label=audio['label'])
         list_item.setInfo(type='video', infoLabels={'genre': audio['genre'], 'plot': audio['plot'], 'tagline': audio['tagline']})
 
