@@ -6,8 +6,7 @@ __copyright__ = 'GPL v.3 https://www.gnu.org/copyleft/gpl.html'
 from json import load
 from os.path import isfile
 import sys
-
-from urlparse import parse_qsl
+from urllib.parse import parse_qsl
 
 import xbmcgui
 import xbmcplugin
@@ -16,20 +15,16 @@ from xbmc import log, LOGDEBUG
 
 __addonid__ = "plugin.audio.intergalacticfm"
 base = xbmc.translatePath(f'special://home/addons/{__addonid__}/resources/')
-
 # Get the plugin url in plugin:// notation.
 _url = sys.argv[0]
 # Get the plugin handle as an integer number.
 _handle = int(sys.argv[1])
-
 _addon = xbmcaddon.Addon()
 
 def list_audios():
     """
     Create the list of playable streams in the Kodi interface.
     """
-
-    radio = 'http://radio.intergalactic.fm:80/'
     streams = load(open(base + 'streams.json'))  # pylint:disable=consider-using-with,unspecified-encoding
     listing = []
 
@@ -44,16 +39,14 @@ def list_audios():
 
         # see https://kodi.wiki/view/Movie_artwork
         # only poster, fanart and clearlogo is supported/needed
-
         art = {}
-
         #log(__addonid__ + ' key: ' + key, LOGDEBUG)
         # poster 1000x1500 1:1.5 PNG
         poster = f'{base}{key}-poster.png'
         if isfile(poster):
             art['poster'] = poster
         else: # note: specific fallback
-            art['poster'] = '{base}intergalactic_radio-poster.png'
+            art['poster'] = f'{base}intergalactic_radio-poster.png'
         #log(__addonid__ + ' poster: ' + art['poster'], LOGDEBUG)
 
         # fanart 1920x1080 16:9 JPG
@@ -61,16 +54,16 @@ def list_audios():
         if isfile(fanart):
             art['fanart'] = fanart
         else: # note: specific fallback
-            art['fanart'] = '{base}fanart.jpg'
+            art['fanart'] = f'{base}fanart.jpg'
         #log(__addonid__ + ' fanart: ' + art['fanart'], LOGDEBUG)
 
         # clearlogo 800x310 1:0.388 transparent PNG (is top-left corner overlay)
-        art['clearlogo'] = '{base}intergalactic_radio-clearlogo.png'
+        art['clearlogo'] = f'{base}intergalactic_radio-clearlogo.png'
 
         list_item.setArt(art)
         list_item.setProperty('IsPlayable', 'true')
 
-        url = f'{radio}{audio["file"]}'
+        url = audio['url']
         log(__addonid__ + ' url: ' + url, LOGDEBUG)
         url = f'{_url}?action=play&video={url}'
         log(__addonid__ + ' url: ' + url, LOGDEBUG)
@@ -125,5 +118,4 @@ def router(paramstring):
 if __name__ == '__main__':
     # Call the router function and pass the plugin call parameters to it.
     # We use string slicing to trim the leading '?' from the plugin call paramstring
-
     router(sys.argv[2])
