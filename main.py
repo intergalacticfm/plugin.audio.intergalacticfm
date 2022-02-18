@@ -12,9 +12,10 @@ import xbmcgui
 import xbmcplugin
 import xbmcaddon
 from xbmc import log, LOGDEBUG
+from xbmcvfs import translatePath
 
 __addonid__ = "plugin.audio.intergalacticfm"
-base = xbmc.translatePath(f'special://home/addons/{__addonid__}/resources/')
+base = translatePath(f'special://home/addons/{__addonid__}/resources/')
 # Get the plugin url in plugin:// notation.
 _url = sys.argv[0]
 # Get the plugin handle as an integer number.
