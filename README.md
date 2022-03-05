@@ -43,6 +43,10 @@ https://github.com/intergalacticfm/plugin.audio.intergalacticfm/archive/refs/hea
 8. Navigate to the directory where the zip file has been downloaded
 9. Install the file **master.zip**
 
+The streams are also available at https://intergalactic.fm/ where under the
+header `RADIO` three buttons are. One for each channel. Each button leads to a
+page where the URLs for the streams are also listed after `ALTERNATIVE TUNE-IN`.
+
 ## Testing
 
 This version has been tested on the following configurations for Kodi.
@@ -50,8 +54,8 @@ This version has been tested on the following configurations for Kodi.
 |           |  Krypton 17 |     Leia 18 |    Matrix 19 |
 |-----------|------------:|------------:|-------------:|
 | Ubuntu    | Disco 19.04 | Disco 19.04 | Impish 21.10 |
-| Debian    |   Stretch 9 |   Buster 10 |         TODO |
-| Raspbian  |   Stretch 9 |   Buster 10 |         TODO |
+| Debian    |   Stretch 9 |   Buster 10 |  Bullseye 11 |
+| Raspbian  |   Stretch 9 |   Buster 10 |  Bullseye 11 |
 | LibreELEC |           8 |           9 |         TODO |
 | Android   |       Pie 9 |       Pie 9 |         TODO |
 
