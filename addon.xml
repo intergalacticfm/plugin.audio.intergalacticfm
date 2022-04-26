@@ -30,9 +30,9 @@ Zie ook de videoplugin. Overweeg a.u.b. een donatie te doen op https://intergala
     <assets>
         <icon>resources/icon.png</icon>
         <fanart>resources/fanart.jpg</fanart>
-        <screenshot>screenshots/s1.png</screenshot>
-        <screenshot>screenshots/s2.png</screenshot>
-        <screenshot>screenshots/s3.png</screenshot>    
+        <screenshot>screenshots/s1.jpg</screenshot>
+        <screenshot>screenshots/s2.jpg</screenshot>
+        <screenshot>screenshots/s3.jpg</screenshot>    
     </assets>
     <news>Updated with latest artwork metadata</news>
     <license>GPL-3.0-or-later</license>
