@@ -47,6 +47,14 @@ The streams are also available at https://intergalactic.fm/ where under the
 header `RADIO` three buttons are. One for each channel. Each button leads to a
 page where the URLs for the streams are also listed after `ALTERNATIVE TUNE-IN`.
 
+Install
+
+    sudo pip3 install kodi-addon-checker
+
+and run
+
+    kodi-addon-checker --branch matrix ../plugin.audio.intergalacticfm
+
 ## Testing
 
 This version has been tested on the following configurations for Kodi.
