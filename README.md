@@ -49,7 +49,7 @@ page where the URLs for the streams are also listed after `ALTERNATIVE TUNE-IN`.
 
 Install
 
-    sudo pip3 install kodi-addon-checker
+    pip install kodi-addon-checker
 
 and run
 
