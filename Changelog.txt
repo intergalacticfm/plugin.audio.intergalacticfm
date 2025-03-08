@@ -1,6 +1,14 @@
+Version 3.0.2 - 2025-03-08
+
+- Removed AAC and OGG channels, upgraded MP3 channels
+- Minor documentation improvements
+- Improved summary and description
+- Renewed screenshots
+
+
 Version 3.0.1 - 2023-03-21
 
-- Minor docmentation improvement
+- Minor documentation improvements
 - Improved summary and description
 
 
